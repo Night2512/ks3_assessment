@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
         q6: 'He doesn\'t like broccoli.',
         q7: 'un',
         q8: 'a', // I like apples; she likes oranges.
-        q9: 'There refers to a place. Their shows possession. They\'re is a contraction of they are.', // Broad answer for text area
+        q9: 'a',
         q10: 'tall',
         q11: 'a', // buy
-        q12: 'To endure a difficult or unpleasant situation.', // Broad answer for text area
+        q12: 'b',
         q13: 'necessary',
         q14: 'The sun was setting, and the sky turned orange.', // Or "The sun was setting; the sky turned orange."
         q15: 'a', // affect

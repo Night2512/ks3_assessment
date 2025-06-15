@@ -163,7 +163,7 @@
 
                 <div class="question" id="q24">
                     <h3>Q24. What is the size of each interior angle of a regular octagon?</h3>
-                    <img src="images/octagon.png" alt="Image of a regular octagon." style="max-width:100px; height:auto; display:block; margin: 10px auto;">
+                    <img src="images/octagon.png" alt="Image of a regular octagon." style="max-width:100px; height:auto;">
                     <p></p>
                     <input type="number" name="q24_answer" placeholder="Enter degrees">
                 </div>
@@ -202,17 +202,13 @@
             </form>
         </div>
 
-        <div id="results" class="section" style="display: none;">
+        <div id="results" class="results-container" style="display:none;">
             <h2>Assessment Results</h2>
-            <p id="overallScore"></p>
-            <p id="overallExpectations"></p>
-            <h3>Detailed Breakdown:</h3>
-            <div id="detailedResults">
-                </div>
-            <button id="sendEmailBtn" style="display: none;">Send Results to Parents</button>
-            <p id="emailStatus"></p>
-            <button onclick="location.reload()" class="restart-button">Start New Assessment</button>
-        </div>
+            <div id="detailedResults"></div>
+            <h3 id="overallScore"></h3>
+            <h3 id="overallExpectations"></h3>
+            <button id="sendEmailBtn" style="display:none;">Send Results to Parents</button>
+            <p id="emailStatus" style="margin-top: 10px;"></p> </div>
     </div>
 
     <script src="script.js"></script>

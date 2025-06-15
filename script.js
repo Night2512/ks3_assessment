@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const CURRENT_KEY_STAGE = "Key Stage 3"; // Or "Key Stage 2", "Key Stage 1" depending on the file
 
     // --- Timer Variables ---
-    const totalTime = 30 * 60; // 30 minutes in seconds (CHANGED FOR KS3)
+    const totalTime = 15 * 60; // 30 minutes in seconds (CHANGED FOR KS3)
     let timeLeft = totalTime;
     let timerInterval;
 

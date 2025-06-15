@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Stage 3 Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Key Stage 3 Assessment</h1>
+
+        <div id="infoCollection" class="section">
+            <h2>Start Your Assessment</h2>
+            <form id="infoForm">
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input type="text" id="parentName" required><br>
+
+                <label for="childName">Child's Name:</label>
+                <input type="text" id="childName" required><br>
+
+                <label for="parentEmail">Parent/Guardian Email:</label>
+                <input type="email" id="parentEmail" required><br>
+
+                <button type="submit">Start Assessment</button>
+            </form>
+        </div>
+
+        <div id="assessmentSection" class="section" style="display: none;">
+            <div id="timer">Time Left: <span id="time">30:00</span></div>
+            <form id="assessmentForm">
+                <div class="question" id="q1">
+                    <h3>Q1. Identify the subordinate clause in the following sentence: "Although it was raining, we still went for a walk."</h3>
+                    <input type="text" name="q1_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q2">
+                    <h3>Q2. Change the following sentence from active to passive voice: "The dog chased the cat."</h3>
+                    <input type="text" name="q2_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q3">
+                    <h3>Q3. Which of these is an example of a simile?</h3>
+                    <label><input type="radio" name="q3_answer" value="a"> The car flew down the road.</label><br>
+                    <label><input type="radio" name="q3_answer" value="b"> Her smile was as bright as the sun.</label><br>
+                    <label><input type="radio" name="q3_answer" value="c"> Time is a thief.</label><br>
+                </div>
+
+                <div class="question" id="q4">
+                    <h3>Q4. Add the correct punctuation to this sentence: "The teacher asked who was ready for the test"</h3>
+                    <input type="text" name="q4_answer" placeholder="Type the full sentence">
+                </div>
+
+                <div class="question" id="q5">
+                    <h3>Q5. What is an antonym for 'benevolent'?</h3>
+                    <label><input type="radio" name="q5_answer" value="a"> kind</label><br>
+                    <label><input type="radio" name="q5_answer" value="b"> generous</label><br>
+                    <label><input type="radio" name="q5_answer" value="c"> malevolent</label><br>
+                </div>
+
+                <div class="question" id="q6">
+                    <h3>Q6. Correct the grammatical error in this sentence: "He don't like broccoli."</h3>
+                    <input type="text" name="q6_answer" placeholder="Type the corrected sentence">
+                </div>
+
+                <div class="question" id="q7">
+                    <h3>Q7. Identify the prefix in the word 'unbelievable'.</h3>
+                    <input type="text" name="q7_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q8">
+                    <h3>Q8. Which sentence uses a semicolon correctly?</h3>
+                    <label><input type="radio" name="q8_answer" value="a"> I like apples; she likes oranges.</label><br>
+                    <label><input type="radio" name="q8_answer" value="b"> He went to the park; and played.</label><br>
+                    <label><input type="radio" name="q8_answer" value="c"> She likes to read; sing and dance.</label><br>
+                </div>
+
+                <div class="question" id="q9">
+                    <h3>Q9. Explain the difference between 'there', 'their', and 'they're'. (Short answer)</h3>
+                    <textarea name="q9_answer" placeholder="Type your explanation here"></textarea>
+                </div>
+
+                <div class="question" id="q10">
+                    <h3>Q10. Identify the adjective in: "The tall building stood majestically."</h3>
+                    <input type="text" name="q10_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q11">
+                    <h3>Q11. Choose the correct homophone: "I need to (buy/by) some milk."</h3>
+                    <label><input type="radio" name="q11_answer" value="a"> buy</label><br>
+                    <label><input type="radio" name="q11_answer" value="b"> by</label><br>
+                </div>
+
+                <div class="question" id="q12">
+                    <h3>Q12. What is the meaning of the idiom "to bite the bullet"?</h3>
+                    <input type="text" name="q12_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q13">
+                    <h3>Q13. Correct the spelling: "necessery"</h3>
+                    <input type="text" name="q13_answer" placeholder="Type the correct spelling">
+                </div>
+
+                <div class="question" id="q14">
+                    <h3>Q14. Form a compound sentence from: "The sun was setting. The sky turned orange."</h3>
+                    <input type="text" name="q14_answer" placeholder="Type your answer here">
+                </div>
+
+                <div class="question" id="q15">
+                    <h3>Q15. Is "affect" or "effect" used correctly: "The rain will (affect/effect) our plans."</h3>
+                    <label><input type="radio" name="q15_answer" value="a"> affect</label><br>
+                    <label><input type="radio" name="q15_answer" value="b"> effect</label><br>
+                </div>
+
+                <div class="question" id="q16">
+                    <h3>Q16. Simplify the expression: 3a + 5b - a + 2b</h3>
+                    <input type="text" name="q16_answer" placeholder="Type your answer (e.g., 2a+7b)">
+                </div>
+
+                <div class="question" id="q17">
+                    <h3>Q17. Solve for x: 2x + 7 = 15</h3>
+                    <input type="number" name="q17_answer" placeholder="Enter number">
+                </div>
+
+                <div class="question" id="q18">
+                    <h3>Q18. What is the value of 5³ (5 cubed)?</h3>
+                    <input type="number" name="q18_answer" placeholder="Enter number">
+                </div>
+
+                <div class="question" id="q19">
+                    <h3>Q19. Calculate 3/5 of 100.</h3>
+                    <input type="number" name="q19_answer" placeholder="Enter number">
+                </div>
+
+                <div class="question" id="q20">
+                    <h3>Q20. If a bag contains 5 red balls, 3 blue balls, and 2 green balls, what is the probability of picking a blue ball?</h3>
+                    <input type="text" name="q20_answer" placeholder="Enter as a fraction (e.g., 1/2)">
+                </div>
+
+                <div class="question" id="q21">
+                    <h3>Q21. Find the area of a rectangle with length 8 cm and width 5 cm.</h3>
+                    <input type="number" name="q21_answer" placeholder="Enter area in cm²">
+                </div>
+
+                <div class="question" id="q22">
+                    <h3>Q22. Convert 0.75 into a percentage.</h3>
+                    <input type="number" name="q22_answer" placeholder="Enter percentage">
+                </div>
+
+                <div class="question" id="q23">
+                    <h3>Q23. A jacket costs £60. If it has a 20% discount, what is its new price?</h3>
+                    <input type="number" name="q23_answer" placeholder="Enter price">
+                </div>
+
+                <div class="question" id="q24">
+                    <h3>Q24. What is the size of each interior angle of a regular octagon?</h3>
+                    <img src="images/octagon.png" alt="Image of a regular octagon." style="max-width:100px; height:auto; display:block; margin: 10px auto;">
+                    <p></p>
+                    <input type="number" name="q24_answer" placeholder="Enter degrees">
+                </div>
+
+                <div class="question" id="q25">
+                    <h3>Q25. Expand and simplify: 2(x + 3) + 4x</h3>
+                    <input type="text" name="q25_answer" placeholder="Type your answer (e.g., 6x+6)">
+                </div>
+
+                <div class="question" id="q26">
+                    <h3>Q26. What is the value of pi (π) to two decimal places?</h3>
+                    <input type="number" step="0.01" name="q26_answer" placeholder="Enter number">
+                </div>
+
+                <div class="question" id="q27">
+                    <h3>Q27. A map has a scale of 1:1000. If a building is 5 cm long on the map, what is its real length in meters?</h3>
+                    <input type="number" name="q27_answer" placeholder="Enter meters">
+                </div>
+
+                <div class="question" id="q28">
+                    <h3>Q28. Calculate the volume of a cuboid with length 4 cm, width 3 cm, and height 2 cm.</h3>
+                    <input type="number" name="q28_answer" placeholder="Enter volume in cm³">
+                </div>
+
+                <div class="question" id="q29">
+                    <h3>Q29. What is the next number in the sequence: 1, 4, 9, 16, ___?</h3>
+                    <input type="number" name="q29_answer" placeholder="Enter number">
+                </div>
+
+                <div class="question" id="q30">
+                    <h3>Q30. Solve the inequality: 3x - 5 < 10</h3>
+                    <input type="text" name="q30_answer" placeholder="Type your answer (e.g., x < 5)">
+                </div>
+
+                <button type="submit">Submit Assessment</button>
+            </form>
+        </div>
+
+        <div id="results" class="section" style="display: none;">
+            <h2>Assessment Results</h2>
+            <p id="overallScore"></p>
+            <p id="overallExpectations"></p>
+            <h3>Detailed Breakdown:</h3>
+            <div id="detailedResults">
+                </div>
+            <button id="sendEmailBtn" style="display: none;">Send Results to Parents</button>
+            <p id="emailStatus"></p>
+            <button onclick="location.reload()" class="restart-button">Start New Assessment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

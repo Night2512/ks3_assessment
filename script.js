@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     childName: childName,
                     parentEmail: parentEmail,
                     resultsText: resultsText,
-                    resultsHtml: resultsHtml
+                    resultsHtml: resultsHtml,
 					keyStage: CURRENT_KEY_STAGE
                 }),
             });

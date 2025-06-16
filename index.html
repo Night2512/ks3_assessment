@@ -204,13 +204,15 @@
                     <h3>Q30. Solve the inequality: 3x - 5 < 10</h3>
                     <input type="text" name="q30_answer" placeholder="Type your answer (e.g., x < 5)">
                 </div>
-                <div>
-                    <p></p>
-                    <div class="cf-turnstile" data-sitekey="0x4AAAAAABhJZmNH0OLuZAif" data-callback="turnstileCallback" data-error-callback="turnstileErrorCallback"></div>
-                    <p class="small-text">Please complete the security check above.</p>
-                </div>>
 
-                <button type="submit" id="submitAssessmentBtn" disabled>Submit Assessment</button>
+                <div>
+                    <button type="submit" id="submitAssessmentBtn" disabled>Submit Assessment</button>
+                    <p></p>
+                    <div class="turnstile-container">
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAABhJZmNH0OLuZAif" data-callback="turnstileCallback" data-error-callback="turnstileErrorCallback"></div>
+                        <p class="small-text">Please complete the security check above.</p>
+                    </div>
+                </div>   
             </form>
         </div>
 

@@ -34,7 +34,7 @@ exports.handler = async (event) => {
     let transporter = nodemailer.createTransport({
         host: smtpHost,
         port: smtpPort,
-        secure: false, // true for 465, false for other ports like 587, 2525
+        secure: true, // true for 465, false for other ports like 587, 2525
         auth: {
             user: smtpUser,
             pass: smtpPass

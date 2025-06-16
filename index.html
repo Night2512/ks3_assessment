@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key Stage 3 Assessment</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
     <div class="container">
@@ -204,7 +205,10 @@
                     <input type="text" name="q30_answer" placeholder="Type your answer (e.g., x < 5)">
                 </div>
 
-                <button type="submit">Submit Assessment</button>
+                <div class="cf-turnstile" data-sitekey="YOUR_CLOUDFLARE_SITE_KEY" data-callback="turnstileCallback" data-error-callback="turnstileErrorCallback"></div>
+                <p class="small-text">Please complete the security check above.</p>
+
+                <button type="submit" id="submitAssessmentBtn" disabled>Submit Assessment</button>
             </form>
         </div>
 
